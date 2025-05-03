@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', system-ui;
+    background-color: #181818;
+    color: white;
+    padding: 20px;
+    /* min-height: 100vh; */
+    margin: 40px 60px;
+}
+
+/* Animatsiyali matn */
+@keyframes colorCycle {
+    0% {
+        color: #ff0000;
+    }
+
+    25% {
+        color: #00ff00;
+    }
+
+    50% {
+        color: #0000ff;
+    }
+
+    75% {
+        color: #ff00ff;
+    }
+
+    100% {
+        color: #ff0000;
+    }
+}
+
+.colorful-text {
+    animation: colorCycle 10s linear infinite;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.btn {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 15px 25px;
+    font-size: 14px;
+    font-family: 'Press Start 2P', system-ui;
+    cursor: pointer;
+}
+
+.range {
+    font-size: 14px;
+}
+
+/* Title */
+.title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.title h1 {
+    font-size: 20px;
+}
+
+/* Line */
+.line {
+    height: 2px;
+    background-color: white;
+    margin: 30px 0;
+}
+
+/* Question */
+.question {
+    background-color: white;
+    color: black;
+    font-size: 40px;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+/* Guess text */
+.guess {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Inputs */
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    padding: 0 20px;
+    width: 100%;
+}
+
+input[type="number"] {
+    font-size: 30px;
+    padding: 10px;
+    width: 100%;
+    /* Responsive: 100% kenglik */
+    max-width: 200px;
+    /* Maksimal 200px */
+    text-align: center;
+    border: 2px solid white;
+    font-family: 'Press Start 2P', system-ui;
+    background: transparent;
+    color: white;
+}
+
+.check {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: none;
+    padding: 15px 30px;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: 'Press Start 2P', system-ui;
+}
+
+/* Score section */
+.score {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    font-size: 12px;
+}
+
+/* Spinner yo'qotish (input uchun) */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Responsive media query */
+@media only screen and (min-width: 768px) {
+    body {
+        margin: 20px 20px;
+    }
+
+    .btn,
+    .check {
+        font-size: 16px;
+        padding: 20px 35px;
+    }
+
+    .title h1 {
+        font-size: 28px;
+    }
+
+    .question {
+        font-size: 60px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .guess {
+        font-size: 20px;
+    }
+
+    .range,
+    .score {
+        font-size: 16px;
+    }
+
+    input[type="number"] {
+        font-size: 40px;
+        width: 100%;
+    }
+}
