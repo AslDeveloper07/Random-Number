@@ -96,7 +96,7 @@ body {
     border-radius: 8px;
     margin-bottom: 30px;
 }
-.question h1{
+.question .number{
     font-size: 80px;
     z-index: 123456789;
 
