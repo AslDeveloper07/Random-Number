@@ -133,7 +133,7 @@ input[type="number"] {
     max-width: 400px;
     /* Maksimal 200px */
     text-align: center;
-    border: 2px solid white;
+    border: 3px solid white;
     font-family: 'Press Start 2P', system-ui;
     background: transparent;
     color: white;
@@ -171,3 +171,8 @@ input[type=number] {
     -moz-appearance: textfield;
 }
 
+.wasted{
+    color: red;
+    font-size: 14px;
+    text-align: center;
+}
