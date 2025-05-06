@@ -12,6 +12,7 @@ body {
     color: white;
     padding: 20px;
     margin: 10px 30px;
+    overflow: hidden;
 }
 
 /* Animatsiyali matn */
