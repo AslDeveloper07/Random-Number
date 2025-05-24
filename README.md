@@ -31,5 +31,4 @@ This is a simple and retro-style **Random Number Guessing Game** built with **HT
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/random-guess-game.git
-   cd random-guess-game
+   git clone https://github.com/AslDeveloper07/Random-Number.git
